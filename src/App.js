@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from './logo.svg'
 import './App.css'
-import ShowName from './components/show-name'
+import Counter from './components/counter'
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
         >
           Learn React
         </a>
-        <ShowName />
+        <Counter />
       </header>
     </div>
   )
