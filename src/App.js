@@ -6,8 +6,8 @@ class FragmentComponent extends Component {
   render() {
     return (
       <Fragment>
-        <p>message 1</p>
-        <p>message 2</p>
+        <p>{this.props.msg1}</p>
+        <p>{this.props.msg2}</p>
       </Fragment>
     )
   }
@@ -15,7 +15,7 @@ class FragmentComponent extends Component {
 
 class BasicComponent extends Component {
   render() {
-    return <p>This is basic component</p>
+    return <p>Hello! {this.props.name}</p>
   }
 }
 
@@ -35,8 +35,8 @@ function App() {
         >
           Learn React
         </a>
-        <BasicComponent />
-        <FragmentComponent />
+        <BasicComponent name="Arthur" />
+        <FragmentComponent msg1="Good" msg2="Bad" />
       </header>
     </div>
   )
