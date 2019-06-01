@@ -1,6 +1,12 @@
-import React from 'react'
+import React, { Component } from 'react'
 import logo from './logo.svg'
 import './App.css'
+
+class BasicComponent extends Component {
+  render() {
+    return <p>This is basic component</p>
+  }
+}
 
 function App() {
   return (
@@ -18,6 +24,7 @@ function App() {
         >
           Learn React
         </a>
+        <BasicComponent />
       </header>
     </div>
   )
