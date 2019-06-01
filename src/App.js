@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from './logo.svg'
 import './App.css'
-import Hello from './components/hello'
+import ShowName from './components/show-name'
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
         >
           Learn React
         </a>
-        <Hello name="Arthur" />
+        <ShowName />
       </header>
     </div>
   )
