@@ -6,11 +6,15 @@ const products = [
   { id: 3, name: 'IPhone 10 Plus' }
 ]
 
+const style = { color: 'green', fontSize: 30 }
+
 const ProductionList = props => (
   <div className="container">
     <ul>
       {products.map(product => (
-        <li key={product.id}>{product.name}</li>
+        <li key={product.id} style={style}>
+          {product.name}
+        </li>
       ))}
     </ul>
   </div>
