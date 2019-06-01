@@ -1,10 +1,7 @@
 import React from 'react'
 import logo from './logo.svg'
 import './App.css'
-
-function BasicFunctionalComponent(props) {
-  return <p>This is functional component</p>
-}
+import Hello from './components/hello'
 
 function App() {
   return (
@@ -22,7 +19,7 @@ function App() {
         >
           Learn React
         </a>
-        <BasicFunctionalComponent />
+        <Hello name="Arthur" />
       </header>
     </div>
   )
