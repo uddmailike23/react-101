@@ -1,6 +1,17 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import logo from './logo.svg'
 import './App.css'
+
+class FragmentComponent extends Component {
+  render() {
+    return (
+      <Fragment>
+        <p>message 1</p>
+        <p>message 2</p>
+      </Fragment>
+    )
+  }
+}
 
 class BasicComponent extends Component {
   render() {
@@ -25,6 +36,7 @@ function App() {
           Learn React
         </a>
         <BasicComponent />
+        <FragmentComponent />
       </header>
     </div>
   )
